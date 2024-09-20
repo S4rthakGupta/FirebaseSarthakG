@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.lab1sarthakg"
+    namespace = "com.example.firebasesarthakg"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.lab1sarthakg"
+        applicationId = "com.example.firebasesarthakg"
         minSdk = 27
         targetSdk = 34
         versionCode = 1

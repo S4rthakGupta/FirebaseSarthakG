@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Lab1SarthakG"
+rootProject.name = "FirebaseSarthakG"
 include(":app")

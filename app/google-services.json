@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "653044686399",
-    "project_id": "lab1sarthakg",
-    "storage_bucket": "lab1sarthakg.appspot.com"
+    "project_number": "1038290143400",
+    "project_id": "fir-sarthakg",
+    "storage_bucket": "fir-sarthakg.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:653044686399:android:f0f0d1b61e2560ca6aa28a",
+        "mobilesdk_app_id": "1:1038290143400:android:879afd28edcabae49e9a9d",
         "android_client_info": {
-          "package_name": "com.example.lab1sarthakg"
+          "package_name": "com.example.firebasesarthakg"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBZreDG3Nj36hGYlw08ZcF3JhXcCzMuFLA"
+          "current_key": "AIzaSyAPP23os7i_TVg_CWIAtnHaw0aUIM3WC6Y"
         }
       ],
       "services": {

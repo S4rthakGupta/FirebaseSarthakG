@@ -1,4 +1,4 @@
-package com.example.lab1sarthakg
+package com.example.firebasesarthakg
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -9,7 +9,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
-import com.example.lab1sarthakg.databinding.ActivityMainBinding
+import com.example.firebasesarthakg.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

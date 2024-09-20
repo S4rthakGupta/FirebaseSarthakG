@@ -1,4 +1,4 @@
-package com.example.lab1sarthakg
+package com.example.firebasesarthakg
 
 import org.junit.Test
 
