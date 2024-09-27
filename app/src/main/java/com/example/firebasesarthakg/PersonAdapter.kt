@@ -2,10 +2,14 @@ package com.example.firebasesarthakg
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.storage.FirebaseStorage
 
 // This adapter class connects the Firebase data to the RecyclerView on the screen.
 class PersonAdapter(options: FirebaseRecyclerOptions<Person>)
@@ -28,6 +32,22 @@ class PersonAdapter(options: FirebaseRecyclerOptions<Person>)
         holder.txtName.text = model.name
         holder.txtRole.text = model.role
         holder.txtTeam.text = model.team
+        val theImage : String = model.photo
+
+        if (theImage.indexOf("gs://") > -1)
+        {
+            val storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(theImage)
+            Glide.with(holder.imgPhoto.context)
+                .load(storageReference)
+                .into(holder.imgPhoto)
+        }
+        else
+        {
+            Glide.with(holder.imgPhoto.context)
+                .load(theImage)
+                .into(holder.imgPhoto)
+        }
+
     }
 
     // This below inner class holds the view elements.
@@ -38,5 +58,6 @@ class PersonAdapter(options: FirebaseRecyclerOptions<Person>)
         val txtName: TextView = itemView.findViewById(R.id.txtName)
         val txtRole: TextView = itemView.findViewById(R.id.txtRole)
         val txtTeam: TextView = itemView.findViewById(R.id.txtTeam)
+        val imgPhoto: ImageView = itemView.findViewById<ImageView>(R.id.imgPhoto)
     }
 }
