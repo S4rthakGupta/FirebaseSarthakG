@@ -16,7 +16,7 @@ class PersonAdapter(options: FirebaseRecyclerOptions<Person>)
         val inflater = LayoutInflater.from(parent.context)
         return MyViewHolder(inflater,parent)
     }
-
+    
     // This function connects the data from the model to the list item.
     override fun onBindViewHolder(
         holder: PersonAdapter.MyViewHolder,
