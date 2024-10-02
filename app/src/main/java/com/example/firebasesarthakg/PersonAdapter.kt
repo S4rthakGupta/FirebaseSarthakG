@@ -34,15 +34,12 @@ class PersonAdapter(options: FirebaseRecyclerOptions<Person>)
         holder.txtTeam.text = model.team
         val theImage : String = model.photo
 
-        if (theImage.indexOf("gs://") > -1)
-        {
+        if (theImage.indexOf("gs://") > -1) {
             val storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(theImage)
             Glide.with(holder.imgPhoto.context)
                 .load(storageReference)
                 .into(holder.imgPhoto)
-        }
-        else
-        {
+        } else {
             Glide.with(holder.imgPhoto.context)
                 .load(theImage)
                 .into(holder.imgPhoto)
