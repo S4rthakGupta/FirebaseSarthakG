@@ -44,7 +44,6 @@ class PersonAdapter(options: FirebaseRecyclerOptions<Person>)
                 .load(theImage)
                 .into(holder.imgPhoto)
         }
-
     }
 
     // This below inner class holds the view elements.
